@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CampusCare - Raise a Query</title>
+  <link rel="icon" type="image/png" href="images/image.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+  
+  <header>
+    <img src="images/image.png" alt="CampusCare Logo" class="logo">
+    <h1>CampusCare</h1>
+    <p>University Student Support &amp; Care Portal</p>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="raise-query.html" class="active">Raise a Query</a>
+    <a href="safety.html">Safety</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  
+  <div class="container">
+    <h2>Raise a Query</h2>
+    <p>Please fill all the fields below to submit your query.</p>
+
+    
+    <div id="query-message" class="message-success" style="display: none;"></div>
+    <p id="query-message" class="message-success"></p>
+
+    
+    <form id="query-form" autocomplete="off">
+      <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="roll">Roll Number:</label><br>
+        <input type="text" id="roll" placeholder="Enter your roll number" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="category">Category:</label><br>
+        <select id="category">
+          <option value="">-- Select Category --</option>
+          <option value="Hostel & Mess">Hostel &amp; Mess</option>
+          <option value="Academics">Academics</option>
+          <option value="Library">Library</option>
+          <option value="Transport">Transport</option>
+          <option value="Infrastructure">Infrastructure</option>
+          <option value="IT & Wi-Fi">IT &amp; Wi-Fi</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="priority">Priority:</label><br>
+        <select id="priority">
+          <option value="">-- Select Priority --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" placeholder="Enter subject" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="description">Description:</label><br>
+        <textarea id="description" placeholder="Enter description"></textarea>
+      </p>
+
+      <p>
+        <label for="file">Attachment (optional):</label><br>
+        <input type="file" id="file">
+      </p>
+
+      <p>
+        <button type="button" onclick="submitQuery()">Submit Query</button>
+      </p>
+    </form>
+  </div>
+
+  
+  <footer>
+    <p>&copy; 2026 CampusCare - University Student Support Portal</p>
+    <p><a href="contact.html">Contact Directory</a> | <a href="safety.html">Emergency Contacts</a></p>
+  </footer>
+
+</body>
+
+</html>

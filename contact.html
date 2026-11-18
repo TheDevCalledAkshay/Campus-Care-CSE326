@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CampusCare - Contact</title>
+  <link rel="icon" type="image/png" href="images/image.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+  
+  <header>
+    <img src="images/image.png" alt="CampusCare Logo" class="logo">
+    <h1>CampusCare</h1>
+    <p>University Student Support &amp; Care Portal</p>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="raise-query.html">Raise a Query</a>
+    <a href="safety.html">Safety</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  
+  <div class="container">
+    <h2>Contact Directory</h2>
+    <p>24/7 University Emergency Numbers:</p>
+    <p><b>Central Security Desk:</b> +91 98xxxxxxxx</p>
+    <p><b>Health Centre Ambulance:</b> +91 98xxxxxxxx</p>
+    <p><b>Hostel Night Supervisor:</b> +91 98xxxxxxxx</p>
+    <p><b>Women's Safety Helpline:</b> +91 98xxxxxxxx</p>
+
+    <hr>
+
+    <h2>Send Us a Message</h2>
+    <p>Please fill all the fields below to send a message.</p>
+
+    
+    <p id="contact-message-box" class="message-success"></p>
+
+    <form id="contact-form" autocomplete="off">
+      <p>
+        <label for="contact-name">Name:</label><br>
+        <input type="text" id="contact-name" placeholder="Enter your name" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="contact-email">Email:</label><br>
+        <input type="email" id="contact-email" placeholder="Enter your email" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="contact-message">Message:</label><br>
+        <textarea id="contact-message" placeholder="Enter your message"></textarea>
+      </p>
+
+      <p>
+        <button type="button" onclick="submitContact()">Send Message</button>
+      </p>
+    </form>
+  </div>
+
+  
+  <footer>
+    <p>&copy; 2026 CampusCare - University Student Support Portal</p>
+    <p><a href="contact.html">Contact Directory</a> | <a href="safety.html">Emergency Contacts</a></p>
+  </footer>
+
+</body>
+
+</html>
